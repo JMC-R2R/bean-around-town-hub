@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@300;500&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap');
+/* Bean Around Town, captured from beanaroundtown.com.au/our-products/alternative-milk/milklab/ and /bonsoy/ (11/11/2026).
+   Headings on the live site use the custom "Hotcoffeefont" TTF. The site sends no CORS header, so it will not load cross-origin;
+   Lilita One is the closest Google fallback. Host the TTF in the hub and change the src below to make it exact. */
+@font-face{font-family:'Hotcoffeefont';src:url('https://beanaroundtown.com.au/wp-content/uploads/2023/08/hot-coffee-font-1361505849.ttf') format('truetype');font-display:swap}
+.pgframe .bt-hero,.pgframe .bt-sec{--bt-blue:#00ADEE;--bt-grey:#F6F3F3;--bt-pad:max(20px,calc((100% - 1140px)/2));font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.5;color:#333}
+.pgframe .bt-sec{padding:30px var(--bt-pad);background:#fff}
+.pgframe .bt-sec h2,.pgframe .bt-sec h3{font-family:'Hotcoffeefont','Lilita One',sans-serif;font-weight:400;color:#000;line-height:1.2;text-align:center;margin:0 0 16px}
+.pgframe .bt-sec h2{font-size:clamp(24px,3.2cqi,32px)}
+.pgframe .bt-sec h3{font-size:28px}
+.pgframe .bt-sec p{margin:0 0 .9rem;line-height:1.5em}
+.pgframe .bt-sec p a{color:#c36;text-decoration:none}
+.pgframe .bt-btn{display:inline-block;background:#00ADEE;color:#fff;font-size:15px;font-weight:500;line-height:1;padding:12px 24px;border:2px solid #fff;border-radius:55px;text-decoration:none;text-align:center}
+/* Hero: dark photo, 79% black overlay, Poppins H1, spaced lowercase lead, blue pill button, product cutout right, wave at the bottom */
+.pgframe .bt-hero{position:relative;overflow:hidden;background:#090909;color:#fff;min-height:clamp(460px,62cqi,760px);padding:clamp(40px,7cqi,90px) var(--bt-pad) clamp(90px,10cqi,130px);display:grid;grid-template-columns:60fr 40fr;gap:20px;align-items:center}
+.pgframe .bt-hero .bt-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;margin:0;border-radius:0;max-width:none;max-height:none;opacity:.21}
+.pgframe .bt-hero::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:80px;transform:rotate(180deg);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.pgframe .bt-hero>*:not(.bt-bg){position:relative;z-index:1}
+.pgframe .bt-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(42px,6.4cqi,73px);font-weight:700;letter-spacing:-.48px;line-height:1;color:#fff;margin:0 0 20px;padding:20px 0 0}
+.pgframe .bt-hero .bt-lead{font-family:'Montserrat',sans-serif;font-size:clamp(13px,1.6cqi,18px);font-weight:400;text-transform:lowercase;letter-spacing:clamp(2px,.47cqi,5.4px);line-height:1.6;color:#fff;margin:0 0 27px}
+.pgframe .bt-hero .bt-prod{width:100%;max-width:430px;aspect-ratio:1;object-fit:cover;justify-self:center;margin:0;border-radius:50%}
+.pgframe .bt-hero .bt-prod.bt-cut{aspect-ratio:auto;object-fit:contain;border-radius:0}
+/* Two column image and text bands */
+.pgframe .bt-intro{padding-top:20px;padding-bottom:20px}
+.pgframe .bt-intro p{text-align:center;padding:0 80px}
+.pgframe .bt-intro p:last-child{margin-bottom:0}
+.pgframe .bt-split{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.pgframe .bt-split.bt-tint{background:#F6F3F3 url('https://beanaroundtown.com.au/wp-content/uploads/2024/09/Alternative-Milk-Background-1.png') center/cover no-repeat}
+.pgframe .bt-split img{width:100%;max-width:444px;justify-self:center;aspect-ratio:444/419;object-fit:cover;margin:0;border-radius:46% 54% 41% 59%/55% 43% 57% 45%}
+.pgframe .bt-split img.bt-cut{object-fit:contain;border-radius:0}
+.pgframe .bt-split .bt-txt{text-align:center;padding:0 40px}
+.pgframe .bt-split.bt-order .bt-txt{padding:0}
+/* Trust strip (fixed copy) */
+.pgframe .bt-trust{padding-top:30px;padding-bottom:30px}
+.pgframe .bt-trust ul{list-style:none;margin:0;padding:0;background:#00ADEE;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pgframe .bt-trust li{padding:10px;text-align:center;font-family:'Poppins',sans-serif;font-size:16px;line-height:1.5em;color:#fff}
+.pgframe .bt-trust img{display:block;width:30%;margin:0 auto 15px;border-radius:0}
+/* Our Wholesale Products: three circle category links (fixed) */
+.pgframe .bt-cats{background:#F6F3F3 url('https://beanaroundtown.com.au/wp-content/uploads/2024/09/Barista-Course-Background.png') bottom center/cover no-repeat;padding-top:40px;padding-bottom:40px}
+.pgframe .bt-cats>p{text-align:center;padding:0 2px 2px}
+.pgframe .bt-cats ul{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pgframe .bt-cats li{text-align:center}
+.pgframe .bt-cats li img{width:85%;aspect-ratio:1;object-fit:cover;border-radius:999px;margin:0 auto 20px;display:block}
+.pgframe .bt-cats li a{color:#000;text-decoration:none}
+.pgframe .bt-cats h3{margin:0}
+/* Range: 4 product photos and the portal button */
+.pgframe .bt-range{background:#F6F3F3;padding-top:70px;padding-bottom:70px;text-align:center}
+.pgframe .bt-range ul{list-style:none;margin:0 auto 20px;padding:0;width:80%;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.pgframe .bt-range li img{display:block;width:100%;height:200px;object-fit:cover;border-radius:10px;margin:0;background:#fff}
+.pgframe .bt-range li img.bt-pack{object-fit:contain}
+/* Reviews (static copy of the Trustindex Google widget) */
+.pgframe .bt-reviews{padding-top:40px;padding-bottom:40px}
+.pgframe .bt-reviews h2{font-size:32px;text-transform:uppercase;margin-bottom:24px}
+.pgframe .bt-rv{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center}
+.pgframe .bt-rating{text-align:center;font-family:'Poppins',sans-serif;color:#000}
+.pgframe .bt-rating b{display:block;font-size:22px;font-weight:500}
+.pgframe .bt-rating i{display:block;font-style:normal;color:#f6bb06;font-size:34px;line-height:1.1}
+.pgframe .bt-rating span{display:block;font-size:14px}
+.pgframe .bt-rating em{display:block;font-style:normal;font-family:Arial,sans-serif;font-size:32px;color:#4285F4;letter-spacing:-1px}
+.pgframe .bt-reviews ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pgframe .bt-reviews li{background:#fff;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.1);padding:18px 20px;font-family:'Poppins',sans-serif;font-size:15px;line-height:1.45;color:#000}
+.pgframe .bt-reviews li b{display:block;font-size:15px;font-weight:500}
+.pgframe .bt-reviews li small{display:block;color:#888;font-size:13px}
+.pgframe .bt-reviews li i{display:block;font-style:normal;color:#f6bb06;font-size:18px;letter-spacing:1px;margin:2px 0 6px}
+/* FAQ: two column accordion, uppercase titles, blue when open */
+.pgframe .bt-faq{background:#F6F3F3;padding-top:50px;padding-bottom:50px}
+.pgframe .bt-faq h2{font-size:clamp(31px,4cqi,45px);font-weight:600;line-height:1.2em;margin:0 0 20px}
+.pgframe .bt-faq .bt-qs{display:grid;grid-template-columns:1fr 1fr;gap:15px 20px;align-items:start}
+.pgframe .bt-faq details{transition:box-shadow .3s}
+.pgframe .bt-faq details:hover{box-shadow:0 0 25px 0 rgba(0,0,0,.24)}
+.pgframe .bt-faq summary{list-style:none;cursor:pointer;padding:15px 50px 15px 20px;position:relative;font-family:'Zurich','Roboto',sans-serif;font-size:18px;font-weight:600;line-height:1.1em;text-transform:uppercase;color:#00ADEE}
+.pgframe .bt-faq summary::-webkit-details-marker{display:none}
+.pgframe .bt-faq summary::after{content:'';position:absolute;right:20px;top:16px;width:16px;height:16px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300ADEE' stroke-width='2.2'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M8 12h8M13 8l4 4-4 4'/%3E%3C/svg%3E") center/contain no-repeat}
+.pgframe .bt-faq details:not([open]) summary{color:#000}
+.pgframe .bt-faq details p{padding:15px 20px;margin:0;font-family:'Roboto',sans-serif;font-size:16px;font-weight:300;line-height:1.8;color:#000}
+
+/* Real site header (beanaroundtown.com.au, 11/11/2026) */
+.pgframe .bth,.pgframe .btf{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.5}
+.pgframe .bth svg,.pgframe .btf svg{width:14px;height:14px;fill:currentColor;flex:none}
+.pgframe .bth svg[fill=none],.pgframe .btf svg[fill=none]{fill:none}
+.pgframe .bth-top{background:#fff;display:flex;align-items:center;gap:20px;min-height:45px;padding:0 max(20px,calc((100% - 1140px)/2))}
+.pgframe .bth-top>img{width:120px;height:auto;margin:10px 0 0 30px;border-radius:0}
+.pgframe .bth-info{flex:1;display:flex;flex-wrap:wrap;gap:4px 19px;font-size:12px;color:#000}
+.pgframe .bth-info span{display:inline-flex;align-items:center;gap:6px}
+.pgframe .bth-login{background:#00ADEE;color:#fff;font-size:15px;line-height:1;padding:12px 24px;border-radius:25px;display:inline-flex;gap:6px;align-items:center}
+.pgframe .bth-nav{background:#fff;display:flex;align-items:center;padding:0 max(20px,calc((100% - 1140px)/2))}
+.pgframe .bth-nav>img{display:none;width:120px;height:auto;margin:0;border-radius:0}
+.pgframe .bth-nav nav{flex:1;display:flex;justify-content:flex-end;gap:35px;padding-right:50px;font-family:'Montserrat',sans-serif;font-size:16px;font-weight:600;letter-spacing:-.4px;color:#00ADEE}
+.pgframe .bth-nav nav span{display:inline-flex;align-items:center;gap:6px;padding:20px 0}
+.pgframe .bth-nav nav svg{width:10px;height:10px}
+.pgframe .bth-burger{display:none;color:#000;background:rgba(0,0,0,.03);padding:6px}
+/* Real site footer */
+.pgframe .btf-cta{background:#000;color:#fff;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;padding:100px max(20px,calc((100% - 1140px)/2))}
+.pgframe .btf-cta h4{font-family:'Poppins',sans-serif;font-size:clamp(26px,3cqi,34px);font-weight:500;line-height:1.3;color:#fff;margin:0 0 0 35px}
+.pgframe .btf-cta div{border-left:2px solid #00ADEE;padding-left:30px}
+.pgframe .btf-cta p{font-size:16px;line-height:1.7em;color:#fff;margin:0 0 20px}
+.pgframe .btf-cta .bth-login{font-size:18px;padding:14px 30px;border:2px solid #fff;border-radius:55px}
+.pgframe .btf-map{background:#e5e3df;color:#555;height:300px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px}
+.pgframe .btf-map svg{width:22px;height:22px;color:#ea4335}
+.pgframe .btf-assoc{background:#fff;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;align-items:center;padding:50px 35px}
+.pgframe .btf-assoc h3{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:700;letter-spacing:-.8px;color:#000;margin:0 0 10px}
+.pgframe .btf-assoc p{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:300;line-height:2em;letter-spacing:-.8px;color:#000;margin:0}
+.pgframe .btf-assoc>div:last-child{display:flex;gap:20px;justify-content:center;align-items:center}
+.pgframe .btf-assoc img{max-width:45%;height:auto;margin:0;border-radius:0}
+.pgframe .btf-main{background:#000;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr 1.4fr;gap:24px;padding:50px 35px}
+.pgframe .btf-main>div:first-child img{width:100%;max-width:240px;height:auto;margin:0;border-radius:0}
+.pgframe .btf-main>div:first-child p{color:rgba(255,255,255,.6);font-size:16px;margin:4px 0 12px}
+.pgframe .btf h5{font-size:18px;font-weight:500;text-transform:uppercase;color:#fff;margin:0 0 14px}
+.pgframe .btf ul{list-style:none;margin:0;padding:0}
+.pgframe .btf li{display:flex;gap:8px;align-items:flex-start;font-size:16px;font-weight:300;line-height:26px;color:rgba(255,255,255,.6);margin:0 0 3px}
+.pgframe .btf li svg{margin-top:6px}
+.pgframe .btf-soc{display:flex;gap:14px;color:rgba(255,255,255,.6)}
+.pgframe .btf-soc svg{width:18px;height:18px}
+.pgframe .btf-bar{background:#333;color:rgba(255,255,255,.37);font-size:14px;font-weight:300;min-height:50px;display:flex;align-items:center;padding:0 35px}
+@container (max-width:760px){
+ .pgframe .bt-hero{grid-template-columns:1fr;min-height:0;padding-top:50px}
+ .pgframe .bt-hero .bt-prod{max-height:300px}
+ .pgframe .bt-intro p{padding:0}
+ .pgframe .bt-split{grid-template-columns:1fr}
+ .pgframe .bt-split .bt-txt{padding:0}
+ .pgframe .bt-split.bt-order img{display:none}
+ .pgframe .bt-trust ul{grid-template-columns:1fr;padding:0 10px}
+ .pgframe .bt-trust li{padding:20px 0}
+ .pgframe .bt-cats>p{text-align:left;padding:0}
+ .pgframe .bt-cats ul{grid-template-columns:1fr}
+ .pgframe .bt-range ul{grid-template-columns:1fr;width:100%;gap:20px}
+ .pgframe .bt-rv,.pgframe .bt-reviews ul{grid-template-columns:1fr}
+ .pgframe .bt-faq .bt-qs{grid-template-columns:1fr}
+ .pgframe .bt-faq summary{padding:12px 45px 12px 15px}
+ .pgframe .bt-faq summary::after{right:15px;top:13px}
+ .pgframe .bt-faq details p{padding:12px 15px}
+ .pgframe .bth-top{flex-direction:column;gap:8px;padding:10px 20px}
+ .pgframe .bth-top>img{display:none}
+ .pgframe .bth-info{justify-content:center;text-align:center}
+ .pgframe .bth-nav{padding:30px 20px;justify-content:space-between}
+ .pgframe .bth-nav>img{display:block;width:80%;max-width:200px}
+ .pgframe .bth-nav nav{display:none}
+ .pgframe .bth-burger{display:grid;place-items:center}
+ .pgframe .bth-burger svg{width:24px;height:24px}
+ .pgframe .btf-cta{grid-template-columns:1fr;padding:50px 20px;gap:20px}
+ .pgframe .btf-cta h4{margin:0}
+ .pgframe .btf-cta div{border-left:0;padding:25px 0 0}
+ .pgframe .btf-assoc{grid-template-columns:1fr;padding:50px 20px}
+ .pgframe .btf-assoc>div:last-child{display:none}
+ .pgframe .btf-main{grid-template-columns:1fr;padding:25px 25px 50px}
+ .pgframe .btf li{font-size:13px}
+ .pgframe .btf-bar{padding:25px 20px}
+}
