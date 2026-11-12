@@ -146,3 +146,8 @@
  .pgframe .btf li{font-size:13px}
  .pgframe .btf-bar{padding:25px 20px}
 }
+
+/* Embed stills (12/11/2026): live maps, video and tour replaced by snapshots for the mockup */
+.pgframe a.pg-snap{display:block;text-decoration:none}
+.pgframe .btf-map-snap{display:block;height:auto;padding:0;background:none}
+.pgframe .btf-map-snap img{display:block;width:100%;height:300px;object-fit:cover;max-width:none}
